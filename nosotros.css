@@ -1,0 +1,69 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #198754;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Contenido principal */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Imagen */
+.historia img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Títulos */
+h2 {
+    color: #198754;
+    margin-top: 25px;
+}
+
+/* Párrafos */
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Enlace de regreso */
+.boton {
+    display: inline-block;
+    background-color: #198754;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: #146c43;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ddd;
+    margin-top: 30px;
+}
