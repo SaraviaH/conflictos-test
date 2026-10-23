@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda Oficial Luxe Glow Cosmetics — Catálogo completo de cosmética botánica de lujo, cuidado facial, maquillaje velvet y fragancias exclusivas.">
+  <title>Luxe Glow Cosmetics | Tienda Oficial</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Estilos Globales -->
+  <link rel="stylesheet" href="../css/global/variables.css">
+  <link rel="stylesheet" href="../css/global/base.css">
+  <!-- Estilos de Componentes Reutilizables -->
+  <link rel="stylesheet" href="../css/components/header/header.css">
+  <link rel="stylesheet" href="../css/components/footer/footer.css">
+  <link rel="stylesheet" href="../css/components/product-card/product-card.css">
+  <!-- Estilos Exclusivos de Tienda -->
+  <link rel="stylesheet" href="../css/pages/tienda.css">
+</head>
+<body data-root=".." data-page="tienda">
+  <!-- Componente Header Reutilizable -->
+  <header id="site-header"></header>
+
+  <main class="container flex-grow-1 py-4">
+    <!-- Hero Tienda -->
+    <section class="tienda-hero text-center text-md-start">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="status-tag mb-3"><i class="fas fa-sparkles text-gold me-1" aria-hidden="true"></i> Catálogo Oficial 2026</span>
+          <h1 class="font-serif display-5 fw-bold text-burgundy-dark mb-3">Colección Exclusiva Luxe Glow</h1>
+          <p class="lead text-muted mb-4" style="max-width: 680px;">
+            Fórmulas botánicas de alta eficacia concebidas bajo estrictos estándares dermatológicos. Descubre tratamientos restauradores, maquillaje de acabado aterciopelado y fragancias artesanales.
+          </p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+            <span class="store-stat-pill"><i class="fas fa-leaf text-gold me-2" aria-hidden="true"></i>100% Botánico &amp; Limpio</span>
+            <span class="store-stat-pill"><i class="fas fa-truck-fast text-gold me-2" aria-hidden="true"></i>Envío Gratis &gt; $50</span>
+            <span class="store-stat-pill"><i class="fas fa-shield-halved text-gold me-2" aria-hidden="true"></i>Clínicamente Testado</span>
+            <span class="store-stat-pill"><i class="fas fa-star text-gold me-2" aria-hidden="true"></i>4.9 / 5 Valoración Global</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra Interactiva de Filtros, Búsqueda y Ordenación -->
+    <section class="tienda-controls-bar" aria-label="Herramientas de filtrado y búsqueda del catálogo">
+      <div class="row g-3 align-items-center">
+        <!-- Buscador -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="search-input-wrapper">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input type="search" id="tienda-search" class="form-control search-input-luxe w-100" placeholder="Buscar cosmético, beneficio, activo..." aria-label="Buscar productos en el catálogo">
+          </div>
+        </div>
+
+        <!-- Categorías sincronizadas desde data/products.json -->
+        <div class="col-12 col-md-7 col-lg-5">
+          <div id="tienda-category-pills" class="filter-pills-container justify-content-start justify-content-md-center" role="group" aria-label="Filtrar por categoría"></div>
+        </div>
+
+        <!-- Ordenación y Contador -->
+        <div class="col-12 col-lg-3 d-flex align-items-center justify-content-between justify-content-lg-end gap-2">
+          <span id="products-count-badge" class="badge bg-rose-soft text-burgundy-dark border px-3 py-2 fw-bold small" aria-live="polite">Cargando...</span>
+          <select id="tienda-sort" class="form-select sort-select-luxe w-auto" aria-label="Ordenar productos">
+            <option value="featured">Destacados</option>
+            <option value="price-asc">Precio: menor a mayor</option>
+            <option value="price-desc">Precio: mayor a menor</option>
+            <option value="rating-desc">Mejor valorados</option>
+            <option value="name-asc">Nombre A-Z</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo Completo de Productos -->
+    <section id="tienda-catalog-section" class="mb-5" aria-label="Listado de productos">
+      <!-- Estado de carga -->
+      <div id="tienda-loading-state" class="luxe-state-box" aria-live="polite">
+        <div class="spinner-border text-gold mb-3" role="status" aria-hidden="true"></div>
+        <h2 class="h5 font-serif fw-bold text-burgundy-dark mb-1">Preparando el catálogo oficial...</h2>
+        <p class="small text-muted mb-0">Cargando nuestras fórmulas botánicas y fragancias exclusivas.</p>
+      </div>
+
+      <!-- Estado de error de lectura -->
+      <div id="tienda-error-state" class="luxe-state-box d-none" aria-live="assertive">
+        <i class="fas fa-triangle-exclamation fs-1 text-gold mb-3" aria-hidden="true"></i>
+        <h2 class="h4 font-serif fw-bold text-burgundy-dark mb-2">No se pudo cargar el catálogo</h2>
+        <p class="text-muted mx-auto mb-0" style="max-width: 500px;">
+          Verifica que estás ejecutando el proyecto mediante un servidor estático local (por ejemplo, Live Server) para permitir la lectura de archivos JSON.
+        </p>
+      </div>
+
+      <!-- Grid Dinámico de Tarjetas Reutilizables -->
+      <div id="tienda-product-grid" class="row g-4"></div>
+
+      <!-- Estado vacío cuando no hay coincidencias con la búsqueda o filtro -->
+      <div id="tienda-empty-state" class="luxe-state-box d-none" aria-live="polite">
+        <i class="fas fa-magnifying-glass fs-1 text-gold mb-3 opacity-75" aria-hidden="true"></i>
+        <h2 class="h4 font-serif fw-bold text-burgundy-dark mb-2">No encontramos coincidencias</h2>
+        <p class="text-muted mx-auto mb-4" style="max-width: 500px;">
+          No hay productos que coincidan con los criterios de búsqueda actuales. Prueba con otros términos o restablece los filtros.
+        </p>
+        <button type="button" id="btn-reset-filters" class="btn btn-luxe-primary">
+          <i class="fas fa-rotate-left me-2" aria-hidden="true"></i>Restablecer Filtros
+        </button>
+      </div>
+    </section>
+
+    <!-- Cinta de Garantías Luxe -->
+    <section class="tienda-guarantees-strip" aria-label="Beneficios exclusivos de la tienda">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <i class="fas fa-shipping-fast text-gold fs-2 mb-2" aria-hidden="true"></i>
+          <h3 class="h6 fw-bold text-burgundy-dark mb-1">Envío Express Seguro</h3>
+          <p class="small text-muted mb-0">Gratis en órdenes mayores a $50 con embalaje térmico protegido.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="fas fa-shield-halved text-gold fs-2 mb-2" aria-hidden="true"></i>
+          <h3 class="h6 fw-bold text-burgundy-dark mb-1">Pago Encriptado</h3>
+          <p class="small text-muted mb-0">Transacciones protegidas con protocolo bancario SSL 256-bit.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="fas fa-gift text-gold fs-2 mb-2" aria-hidden="true"></i>
+          <h3 class="h6 fw-bold text-burgundy-dark mb-1">Muestras de Regalo</h3>
+          <p class="small text-muted mb-0">Incluimos miniaturas botánicas de cortesía en cada pedido.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="fas fa-rotate-left text-gold fs-2 mb-2" aria-hidden="true"></i>
+          <h3 class="h6 fw-bold text-burgundy-dark mb-1">Garantía 30 Días</h3>
+          <p class="small text-muted mb-0">Devolución fácil y flexible si el empaque permanece sellado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Club Luxe VIP -->
+    <section class="vip-club-card" aria-labelledby="vip-heading">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <span class="badge bg-gold text-dark fw-bold text-uppercase px-3 py-1 mb-2" style="letter-spacing:1px">Membresía Gratuita</span>
+          <h2 id="vip-heading" class="font-serif display-6 fw-bold mb-2">Únete al Círculo Privado Luxe Glow</h2>
+          <p class="text-white-50 mb-0" style="max-width: 600px;">
+            Suscríbete para recibir un <strong>15% de descuento</strong> en tu primera compra, acceso anticipado a ediciones limitadas y consejos de dermatología cosmética.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <form id="vip-club-form" class="d-flex flex-column flex-sm-row gap-2" novalidate>
+            <label for="vip-email-input" class="visually-hidden">Tu correo electrónico</label>
+            <input type="email" id="vip-email-input" class="form-control rounded-pill px-3 py-2" placeholder="Tu correo electrónico" required>
+            <button class="btn bg-gold text-dark fw-bold rounded-pill px-4 text-nowrap border-0" type="submit">
+              Obtener 15%
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Componente Footer Reutilizable -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts Base y Componentes -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/utils/paths.js"></script>
+  <script src="../js/utils/data-service.js"></script>
+  <script src="../js/utils/cart.js"></script>
+  <script src="../js/core/component-loader.js"></script>
+  <script src="../js/components/header/header.js"></script>
+  <script src="../js/components/footer/footer.js"></script>
+  <script src="../js/components/product-card/product-card.js"></script>
+  <script src="../js/core/app-init.js"></script>
+  <script src="../js/pages/tienda.js"></script>
+</body>
+</html>
+

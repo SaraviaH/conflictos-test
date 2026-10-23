@@ -1,0 +1,106 @@
+<!-- Componente Reutilizable: Header (Topbar + Navbar + Cart Offcanvas) -->
+<div class="luxe-topbar">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <span><i class="fas fa-truck me-2 text-gold" aria-hidden="true"></i>Envío Express Gratis en compras superiores a $50</span>
+    <span class="d-none d-md-inline">
+      <a href="mailto:contacto@luxeglow.com" class="luxe-topbar-link"><i class="fas fa-envelope me-1" aria-hidden="true"></i> contacto@luxeglow.com</a>
+      <span class="mx-2 opacity-50">|</span>
+      <a href="tel:+525589003456" class="luxe-topbar-link"><i class="fas fa-phone me-1" aria-hidden="true"></i> +52 (55) 8900-3456</a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg luxe-navbar sticky-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand luxe-navbar-brand" data-route="index.html" href="index.html">
+      <span class="luxe-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>
+      Luxe <span>Glow</span>
+    </a>
+
+    <button class="navbar-toggler luxe-navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLuxeContent" aria-controls="navbarLuxeContent" aria-expanded="false" aria-label="Alternar menú de navegación">
+      <i class="fas fa-bars fs-4" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarLuxeContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link luxe-nav-link" data-nav-key="index" data-route="index.html" href="index.html">
+            <i class="fas fa-store me-1" aria-hidden="true"></i> Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luxe-nav-link" data-nav-key="tienda" data-route="pages/tienda.html" href="pages/tienda.html">
+            <i class="fas fa-bag-shopping me-1" aria-hidden="true"></i> Tienda
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luxe-nav-link" data-nav-key="nosotros" data-route="pages/nosotros.html" href="pages/nosotros.html">
+            <i class="fas fa-leaf me-1" aria-hidden="true"></i> Nosotros
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link luxe-nav-link dropdown-toggle" id="navbarDescubreDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-wand-magic-sparkles me-1" aria-hidden="true"></i> Descubre
+          </a>
+          <ul class="dropdown-menu luxe-dropdown-menu" aria-labelledby="navbarDescubreDropdown">
+            <li>
+              <a class="dropdown-item luxe-dropdown-item" data-nav-key="ritual" data-route="pages/ritual.html" href="pages/ritual.html">
+                <i class="fas fa-wand-magic-sparkles me-2 text-gold" aria-hidden="true"></i>Ritual de Cuidado
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item luxe-dropdown-item" data-nav-key="ingredientes" data-route="pages/ingredientes.html" href="pages/ingredientes.html">
+                <i class="fas fa-flask me-2 text-gold" aria-hidden="true"></i>Ingredientes
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item luxe-dropdown-item" data-nav-key="diario" data-route="pages/diario.html" href="pages/diario.html">
+                <i class="fas fa-book-open me-2 text-gold" aria-hidden="true"></i>Diario Botánico
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item luxe-dropdown-item" data-nav-key="faq" data-route="pages/faq.html" href="pages/faq.html">
+                <i class="fas fa-circle-question me-2 text-gold" aria-hidden="true"></i>Preguntas Frecuentes
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item luxe-dropdown-item" data-nav-key="envios" data-route="pages/envios.html" href="pages/envios.html">
+                <i class="fas fa-truck me-2 text-gold" aria-hidden="true"></i>Envíos &amp; Devoluciones
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luxe-nav-link" data-nav-key="contacto" data-route="pages/contacto.html" href="pages/contacto.html">
+            <i class="fas fa-envelope me-1" aria-hidden="true"></i> Contacto
+          </a>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-center justify-content-center mt-3 mt-lg-0">
+        <button class="btn luxe-cart-btn d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" aria-label="Abrir bolsa de compras">
+          <i class="fas fa-shopping-bag fs-5 me-2" aria-hidden="true"></i>
+          <span>Mi Carrito</span>
+          <span class="luxe-cart-badge" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas del Carrito de Compras -->
+<div class="offcanvas offcanvas-end luxe-cart-offcanvas rounded-start-4" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title font-serif text-burgundy fw-bold" id="cartOffcanvasLabel">
+      <i class="fas fa-shopping-bag text-gold me-2" aria-hidden="true"></i> Bolsa de Compras
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar bolsa de compras"></button>
+  </div>
+  <div class="offcanvas-body" id="cart-body"></div>
+  <div class="offcanvas-footer p-3 border-top bg-light d-none" id="cart-footer"></div>
+</div>
+
+<!-- Contenedor de Notificaciones Toast -->
+<div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3" aria-live="polite" aria-atomic="true"></div>
+

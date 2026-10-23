@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Luxe Glow Cosmetics — css/pages/nosotros.css
+   Estilos exclusivos para la página Nosotros (pages/nosotros.html)
+   ========================================================================== */
+
+.nosotros-hero {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 3.25rem 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.nosotros-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-burgundy), var(--color-gold), var(--color-burgundy));
+}
+
+.nosotros-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(243, 230, 227, 0.85);
+  height: 100%;
+  transition: var(--transition);
+}
+
+.nosotros-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.nosotros-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-rose-dusty);
+  color: var(--color-burgundy-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.55rem;
+  margin-bottom: 1rem;
+  border: 1px dashed var(--color-gold);
+}
+
+.nosotros-atelier-banner {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.nosotros-atelier-img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.valores-section {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(243, 230, 227, 0.85);
+  padding: 2.5rem;
+}
+

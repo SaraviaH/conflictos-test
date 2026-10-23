@@ -1,0 +1,35 @@
+<!-- Componente Reutilizable: Tarjeta de Producto (Plantilla Base) -->
+<article class="luxe-product-card">
+  <div class="luxe-product-card__media">
+    <span class="luxe-product-card__badge d-none" data-card-badge></span>
+    <img src="" alt="" class="luxe-product-card__img" loading="lazy" data-card-img>
+    <button type="button" class="btn luxe-product-card__quickview-btn d-none" data-card-quickview>
+      <i class="fas fa-eye me-1" aria-hidden="true"></i> Vista Rápida
+    </button>
+  </div>
+
+  <div class="luxe-product-card__body">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <span class="luxe-product-card__category" data-card-category></span>
+      <div class="luxe-product-card__rating d-none" data-card-rating-wrap>
+        <i class="fas fa-star text-gold" aria-hidden="true"></i>
+        <span class="fw-bold text-dark" data-card-rating></span>
+        <small class="text-muted" data-card-reviews></small>
+      </div>
+    </div>
+
+    <h3 class="luxe-product-card__title" data-card-title></h3>
+    <p class="luxe-product-card__desc" data-card-desc></p>
+
+    <div class="luxe-product-card__footer d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+      <div class="luxe-product-card__prices">
+        <span class="luxe-product-card__price" data-card-price></span>
+        <span class="luxe-product-card__old-price d-none" data-card-old-price></span>
+      </div>
+      <button type="button" class="btn btn-luxe-primary btn-sm px-3 luxe-product-card__add-btn" data-card-add>
+        <i class="fas fa-plus me-1" aria-hidden="true"></i> Añadir
+      </button>
+    </div>
+  </div>
+</article>
+

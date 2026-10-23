@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Luxe Glow Cosmetics — css/pages/ritual.css
+   Estilos exclusivos para Ritual de Cuidado (pages/ritual.html)
+   ========================================================================== */
+
+.ritual-hero {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.ritual-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-burgundy), var(--color-gold), var(--color-burgundy));
+}
+
+.ritual-step {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(243, 230, 227, 0.85);
+  height: 100%;
+  transition: var(--transition);
+  position: relative;
+  margin-top: 0.75rem;
+}
+
+.ritual-step:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.ritual-step-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-burgundy);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  position: absolute;
+  top: -18px;
+  left: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--color-white);
+}
+
+.ritual-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-rose-dusty);
+  color: var(--color-burgundy-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px dashed var(--color-gold);
+  margin-top: 0.5rem;
+}
+
+.tip-box {
+  background: var(--color-rose-soft);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  border-radius: 16px;
+  padding: 1.15rem;
+}
+

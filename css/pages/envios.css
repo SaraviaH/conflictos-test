@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Luxe Glow Cosmetics — css/pages/envios.css
+   Estilos exclusivos para Envíos y Devoluciones (pages/envios.html)
+   ========================================================================== */
+
+.envios-hero {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.envios-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-burgundy), var(--color-gold), var(--color-burgundy));
+}
+
+.policy-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(243, 230, 227, 0.85);
+  height: 100%;
+  transition: var(--transition);
+}
+
+.policy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.policy-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-rose-dusty);
+  color: var(--color-burgundy-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px dashed var(--color-gold);
+}
+
+.table-luxe {
+  border-radius: 16px;
+  overflow: hidden;
+}
+

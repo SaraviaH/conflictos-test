@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Luxe Glow Cosmetics — css/pages/faq.css
+   Estilos exclusivos para Preguntas Frecuentes (pages/faq.html)
+   ========================================================================== */
+
+.faq-hero {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.faq-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-burgundy), var(--color-gold), var(--color-burgundy));
+}
+
+.faq-search-box {
+  max-width: 520px;
+  margin: 1.5rem auto 0;
+  position: relative;
+}
+
+.faq-search-box i {
+  position: absolute;
+  left: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-gold);
+  pointer-events: none;
+}
+
+.faq-search-input {
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
+  padding: 0.65rem 1.25rem 0.65rem 2.6rem;
+  background: var(--color-rose-soft);
+  font-size: 0.92rem;
+}
+
+.faq-search-input:focus {
+  background: var(--color-white);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.15);
+  outline: none;
+}
+
+.accordion-luxe .accordion-item {
+  border: 1px solid rgba(243, 230, 227, 0.85);
+  border-radius: 16px !important;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.accordion-luxe .accordion-button {
+  font-weight: 600;
+  color: var(--color-burgundy-dark);
+  background: var(--color-white);
+}
+
+.accordion-luxe .accordion-button:not(.collapsed) {
+  background: var(--color-rose-soft);
+  color: var(--color-burgundy);
+  box-shadow: none;
+}
+
+.accordion-luxe .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.accordion-luxe .accordion-body {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+

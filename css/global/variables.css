@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Luxe Glow Cosmetics — css/global/variables.css
+   Variables globales de identidad visual: paleta rosa, dorado, cremas y textos
+   ========================================================================== */
+
+@import url('../../assets/fonts/typography.css');
+
+:root {
+  /* Paleta Principal (Rosa & Borgoña Elegante) */
+  --color-rose-primary: #d97786;
+  --color-burgundy: #9b001a;
+  --color-burgundy-dark: #45151B;
+  --color-burgundy-hover: #45151B;
+
+  /* Color de Acento (Dorado) */
+  --color-gold: #D4AF37;
+  --color-gold-dark: #A6841E;
+  --color-gold-light: #F7E7B4;
+
+  /* Fondos (Blanco, Crema y Champagne) */
+  --color-white: #FFFFFF;
+  --color-cream: #FFFDFB;
+  --color-rose-soft: #FDF6F4;
+  --color-rose-dusty: #F3E6E3;
+  --color-champagne: #F5ECE8;
+
+  /* Tonos Oscuros para Textos */
+  --color-text-dark: #2B2525;
+  --color-text-muted: #6E6260;
+
+  /* Colores de Estado */
+  --color-status-warning-bg: #FFF3CD;
+  --color-status-warning-text: #856404;
+  --color-status-warning-border: #FFEEBA;
+  --color-status-success: #2E6F40;
+  --color-status-danger: #B93848;
+
+  /* Sombras, Bordes y Transiciones */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-pill: 50px;
+  --shadow-sm: 0 4px 15px rgba(92, 29, 36, 0.06);
+  --shadow-md: 0 10px 30px rgba(92, 29, 36, 0.09);
+  --shadow-lg: 0 20px 40px rgba(92, 29, 36, 0.14);
+  --transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+

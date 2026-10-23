@@ -1,0 +1,66 @@
+{
+  "categories": [
+    { "id": "all", "label": "Todos los Artículos" },
+    { "id": "rituales", "label": "Rituales & Estaciones" },
+    { "id": "ciencia", "label": "Ciencia & Activos" },
+    { "id": "sostenibilidad", "label": "Sostenibilidad" },
+    { "id": "comunidad", "label": "Comunidad" }
+  ],
+  "articles": [
+    {
+      "id": "clima",
+      "category": "rituales",
+      "tag": "Ritual & Estaciones · 4 min de lectura",
+      "title": "Cómo adaptar tu ritual al cambio de clima",
+      "excerpt": "El frío reseca, el calor oxida. Aprende a ajustar textura y frecuencia sin cambiar toda tu rutina cada estación. Claves: capas finas, observancia y constancia.",
+      "icon": "fa-cloud-sun",
+      "content": "<p class=\"lead text-muted\">El cambio de estación no requiere tirar tu tocador a la basura y empezar de cero. La piel busca equilibrio frente a la oscilación térmica y la humedad ambiental.</p><h4>1. La transición hacia el frío: Refuerzo de barrera</h4><p>Durante los meses fríos o en ambientes con calefacción continua, la tasa de evaporación de agua transepidérmica (TEWL) se dispara. No necesitas cremas pesadas que saturen tus poros; la clave es el método de <em>layering</em> o capas sutiles: primero humectantes hidrofílicos como el ácido hialurónico sobre piel ligeramente humedecida, sellados posteriormente con emulsiones con ceramidas y escualano botánico.</p><div class=\"article-highlight-box\">“La piel no reacciona al calendario, sino al microclima en el que vive. Aprende a tocarla cada mañana antes de decidir qué textura aplicar.”</div><h4>2. Temporadas cálidas: Antioxidantes y fotoprotección</h4><p>Con el aumento de la radiación solar y la temperatura, la producción sebácea natural sube. Es el momento de privilegiar texturas en gel o brumas fluidas con alta concentración de antioxidantes (vitamina C, niacinamida, extracto de té verde) para neutralizar los radicales libres inducidos por el sol y la polución urbana.</p><div class=\"article-takeaways\"><h6 class=\"fw-bold text-burgundy mb-2\"><i class=\"fas fa-check-circle text-gold me-2\"></i>Puntos Clave para tu Tocador</h6><ul class=\"mb-0 small text-muted\"><li><strong>Invierno:</strong> Reduce exfoliaciones a 1 vez por semana y añade una gota de aceite botánico a tu crema nocturna.</li><li><strong>Verano:</strong> Limpieza suave sin sulfatos para retirar sudor sin barrer los lípidos saludables.</li><li><strong>Todo el año:</strong> Protector solar SPF 50+ de amplio espectro, llueva o truene.</li></ul></div>"
+    },
+    {
+      "id": "niacinamida",
+      "category": "ciencia",
+      "tag": "Ciencia & Activos · 3 min de lectura",
+      "title": "Niacinamida y rosa botánica: ¿por qué funcionan tan bien juntas?",
+      "excerpt": "Dos activos suaves pero de comprobada eficacia dermatológica. Te explicamos su mecanismo sin tecnicismos: barrera, tono y calma.",
+      "icon": "fa-flask",
+      "content": "<p class=\"lead text-muted\">En el mundo de la formulación cosmética contemporánea, existe una tendencia a creer que solo los activos agresivos producen resultados. La sinergia entre Niacinamida y Rosa Damascena demuestra lo contrario.</p><h4>El rol biológico de la Niacinamida (Vitamina B3)</h4><p>La niacinamida es una molécula hidrosoluble biocompatible que interviene como coenzima en procesos celulares esenciales. Sus virtudes comprobadas incluyen:</p><ul><li>Estímulo en la producción natural de ceramidas y ácidos grasos libres en el estrato córneo.</li><li>Regulación sebácea sin causar descamación ni efecto rebote.</li><li>Inhibición de la transferencia de melanosomas, atenuando manchas post-inflamatorias.</li></ul><h4>La acción botánica de la Rosa Damascena</h4><p>El hidrolato puro y los extractos de rosa aportan flavonoides, taninos suaves y terpenos aromáticos que mitigan la microinflamación epidérmica. Al asociarse con la niacinamida, se crea una atmósfera de tolerancia celular donde los activos trabajan en calma y sin rojeces.</p><div class=\"article-highlight-box\">“Una piel sin inflamación es una piel que puede dedicar toda su energía a la regeneración celular y la síntesis de colágeno.”</div><div class=\"article-takeaways\"><h6 class=\"fw-bold text-burgundy mb-2\"><i class=\"fas fa-check-circle text-gold me-2\"></i>Cómo incorporarlos en tu día a día</h6><p class=\"small text-muted mb-0\">Esta combinación es tan noble que puede emplearse tanto por la mañana (previo al protector solar) como por la noche. Es idónea incluso para pieles con rosácea o tendencia acneica.</p></div>"
+    },
+    {
+      "id": "packaging",
+      "category": "sostenibilidad",
+      "tag": "Sostenibilidad · 3 min de lectura",
+      "title": "Packaging que vuelve: refil, reciclaje y belleza limpia",
+      "excerpt": "Nuestro compromiso hacia envases recargables de vidrio y aluminio reciclable. Conoce qué ya hacemos y cómo sumarte desde casa.",
+      "icon": "fa-recycle",
+      "content": "<p class=\"lead text-muted\">La verdadera sofisticación hoy en día reside en el respeto por el entorno. No concebimos productos que cuiden tu rostro mientras saturan vertederos de plástico virgen.</p><h4>Frascos de cristal opalescente y tintas minerales</h4><p>Todos nuestros envases principales se manufacturan en cristal reciclable de alta densidad que protege la integridad de las fórmulas fotosensibles sin requerir recubrimientos plásticos innecesarios. Las etiquetas se imprimen con tintas a base de agua y adhesivos solubles que facilitan el proceso de reciclaje industrial.</p><h4>El camino hacia el sistema de Refill</h4><p>Estamos diseñando cartuchos interiores de aluminio y cápsulas biodegradables para nuestras cremas y sérums. Esto permitirá reutilizar el frasco exterior dorado de lujo una y otra vez, reduciendo hasta un 75% el consumo de materiales por cada recarga.</p><div class=\"article-highlight-box\">“El lujo del siglo XXI no es desechable. Es durable, coleccionable y consciente de su ciclo de vida.”</div><div class=\"article-takeaways\"><h6 class=\"fw-bold text-burgundy mb-2\"><i class=\"fas fa-seedling text-gold me-2\"></i>Cómo reciclar tus frascos Luxe Glow en casa</h6><ol class=\"small text-muted mb-0 ps-3\"><li>Retira el gotero o válvula dosificadora.</li><li>Enjuaga el frasco de cristal con agua tibia y jabón neutro.</li><li>Deposita el vidrio en el contenedor correspondiente o dale una segunda vida como jarrón botánico en miniatura.</li></ol></div>"
+    },
+    {
+      "id": "noche",
+      "category": "rituales",
+      "tag": "Sueño & Piel · 4 min de lectura",
+      "title": "El turno de noche: por qué la piel ama dormir profundamente",
+      "excerpt": "Entre las 23:00 y las 02:00 h la regeneración celular se acelera exponencialmente. Aprende a potenciar este ciclo biológico nocturno.",
+      "icon": "fa-moon",
+      "content": "<p class=\"lead text-muted\">Mientras descansas, tu organismo entra en modo de reparación exhaustiva. La cronobiología cutánea ha demostrado que la piel tiene ritmos circadianos propios con funciones muy definidas para el día y la noche.</p><h4>Cronobiología: El pico de mitosis celular</h4><p>Durante la vigilia, la energía cutánea se concentra en defenderse: radiación UV, polución y cambios de temperatura. Al llegar la fase de sueño profundo, los niveles de cortisol bajan y se libera la hormona melatonina, activando el pico máximo de mitosis (división y renovación celular).</p><h4>Mayor permeabilidad dérmica</h4><p>Por la noche, la temperatura de la piel se incrementa ligeramente y la barrera cutánea es temporalmente más permeable. Esto convierte a la noche en el instante idóneo para suministrar activos transformadores como péptidos reafirmantes, ácido hialurónico y aceites ricos en ácidos grasos esenciales omega 3, 6 y 9.</p><div class=\"article-highlight-box\">“Un buen ritual nocturno no busca maquillar imperfecciones, sino brindarle a la piel los nutrientes precisos para despertar descansada y vital.”</div><div class=\"article-takeaways\"><h6 class=\"fw-bold text-burgundy mb-2\"><i class=\"fas fa-bed text-gold me-2\"></i>Ritual para optimizar tu descanso</h6><ul class=\"small text-muted mb-0\"><li>Desconecta pantallas 30 minutos antes de dormir para permitir la secreción natural de melatonina.</li><li>Aplica tu crema de noche con suaves movimientos circulares que estimulen el drenaje linfático facial.</li><li>Usa fundas de almohada de seda o satén para reducir la fricción mecánica y el frizz capilar.</li></ul></div>"
+    },
+    {
+      "id": "mitos",
+      "category": "ciencia",
+      "tag": "Mitos & Realidad · 3 min de lectura",
+      "title": "5 mitos del skincare que conviene desterrar para siempre",
+      "excerpt": "“Si arde funciona”, “la piel grasa no se hidrata”, “lo natural nunca hace daño”. Desmontamos con evidencia científica y sensatez médica.",
+      "icon": "fa-magnifying-glass",
+      "content": "<p class=\"lead text-muted\">La abundancia de tendencias en redes sociales propaga con frecuencia mitos nocivos que comprometen la salud de la barrera cutánea. Analicemos los cinco más habituales.</p><h4>Mito 1: “Si pica o quema, es que está haciendo efecto”</h4><p><strong>Falso.</strong> Salvo un cosquilleo muy leve y transitorio con ciertos hidroxiácidos concentrados, el ardor, enrojecimiento o picor es una respuesta inflamatoria de alerta de tu piel. La cosmética de alta gama busca eficacia con máxima tolerancia, no sufrimiento epidérmico.</p><h4>Mito 2: “La piel con tendencia grasa no debe hidratarse”</h4><p><strong>Falso.</strong> Grasa (lípidos) y agua (hidratación) son cosas completamente distintas. Una piel grasa deshidratada responderá secretando aún más sebo para compensar la sequedad. Requiere lociones libres de aceites minerales pero colmadas de ácido hialurónico y niacinamida.</p><h4>Mito 3: “Los poros se abren con vapor y se cierran con agua helada”</h4><p><strong>Falso.</strong> Los poros no poseen tejido muscular; no son puertas que abren o cierran. El vapor ablanda el sebo facilitando su limpieza, pero el poro mantiene su tamaño genético, aunque luce visiblemente más fino cuando está limpio y la piel bien elástica.</p><h4>Mito 4: “Si es natural, es 100% seguro para todos”</h4><p><strong>Falso.</strong> El veneno de serpiente o la hiedra venenosa son naturales. La cosmética botánica seria no se define por la palabra 'natural', sino por extractos purificados, estabilizados, libres de pesticidas y dosificados clínicamente.</p><h4>Mito 5: “Solo necesito protector solar en verano o si voy a la playa”</h4><p><strong>Falso.</strong> La radiación UVA (responsable del fotoenvejecimiento prematuro y manchas profundas) atraviesa nubes espesas y cristales de ventanas los 365 días del año.</p><div class=\"article-takeaways\"><h6 class=\"fw-bold text-burgundy mb-2\"><i class=\"fas fa-lightbulb text-gold me-2\"></i>Conclusión</h6><p class=\"small text-muted mb-0\">Escucha a tu piel con sentido común y rodéate de información respaldada por dermatólogos colegiados.</p></div>"
+    },
+    {
+      "id": "comunidad",
+      "category": "comunidad",
+      "tag": "Comunidad & Filosofía · 2 min de lectura",
+      "title": "Comparte tu ritual #LuxeGlow: Belleza real sin filtros",
+      "excerpt": "No usamos modelos con retoques digitales irreales. Te invitamos a documentar tu proceso y compartirlo con nuestra comunidad.",
+      "icon": "fa-heart",
+      "content": "<p class=\"lead text-muted\">Vivimos inmersos en imágenes digitales perfeccionadas por algoritmos y filtros que distorsionan lo que significa tener una piel humana viva y saludable.</p><h4>Piel sana no significa piel de porcelana inerte</h4><p>Los poros existen, las líneas de expresión son testimonio de risas y vivencias, y las variaciones hormonales forman parte de nuestro ritmo vital. En Luxe Glow apostamos por la autenticidad: texturas luminosas, tersura, calma y confort duradero.</p><h4>Manifiesto #LuxeGlowReal</h4><p>Te invitamos a documentar el progreso de tu ritual a lo largo de 3 a 4 semanas. Toma una fotografía cada semana con la misma luz natural de mañana, sin maquillaje ni retoques. Notarás cómo la constancia y la nutrición botánica revelan una luz genuina desde el interior.</p><div class=\"article-highlight-box\">“El verdadero brillo no es un filtro en una pantalla; es la salud visible de una piel cuidada con amor, paciencia y ciencia limpia.”</div><div class=\"article-takeaways\"><h6 class=\"fw-bold text-burgundy mb-2\"><i class=\"fas fa-users text-gold me-2\"></i>Únete a la conversación</h6><p class=\"small text-muted mb-0\">Etiquétanos en tus publicaciones con el hashtag <strong>#LuxeGlowReal</strong> o comparte tus impresiones y dudas directamente con nuestro equipo de asesoría en la sección de contacto.</p></div>"
+    }
+  ]
+}
+

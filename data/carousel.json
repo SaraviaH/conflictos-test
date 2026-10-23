@@ -1,0 +1,77 @@
+{
+  "slides": [
+    {
+      "id": "coleccion-2026",
+      "tag": "Colección Primavera 2026",
+      "tagIcon": "fa-sparkles",
+      "title": "El Arte de la Nutrición & El Brillo Natural",
+      "subtitle": "Descubre nuestra línea de cosmética botánica de alta gama formulada para rejuvenecer, proteger y realzar la luz natural de tu piel cada día.",
+      "image": "assets/images/carousel/slide_coleccion.png",
+      "imageAlt": "Colección de cosmética botánica de lujo Luxe Glow sobre mármol y seda rosa",
+      "primaryBtn": {
+        "label": "Ver Destacados",
+        "href": "#catalogo",
+        "icon": "fa-shopping-bag"
+      },
+      "secondaryBtn": {
+        "label": "Nuestra Esencia",
+        "href": "pages/nosotros.html"
+      }
+    },
+    {
+      "id": "ritual-facial",
+      "tag": "Ciencia Dermatológica Limpia",
+      "tagIcon": "fa-leaf",
+      "title": "Sérums & Tratamientos de Renovación Celular",
+      "subtitle": "Extracto puro de Rosa Damascena, péptidos biomiméticos y ácido hialurónico multicapa para una barrera cutánea firme, calmada y radiante.",
+      "image": "assets/images/carousel/slide_skincare.png",
+      "imageAlt": "Frascos de sérum y cremas de tratamiento facial con pétalos de rosa de Damasco",
+      "primaryBtn": {
+        "label": "Explorar Cuidado Facial",
+        "href": "pages/tienda.html?category=facial",
+        "icon": "fa-droplet"
+      },
+      "secondaryBtn": {
+        "label": "Guía de Ritual",
+        "href": "pages/ritual.html"
+      }
+    },
+    {
+      "id": "maquillaje-velvet",
+      "tag": "Acabado Seda & Terciopelo",
+      "tagIcon": "fa-wand-magic-sparkles",
+      "title": "Maquillaje de Tratamiento con Pigmentos Puros",
+      "subtitle": "Fórmulas sensoriales infusionadas con activos hidratantes, minerales de cuarzo rosa y estuches bañados en oro para realzar tus facciones sin resecar.",
+      "image": "assets/images/carousel/slide_maquillaje.png",
+      "imageAlt": "Colección de labiales aterciopelados, paleta iluminadora y base de seda Luxe Glow",
+      "primaryBtn": {
+        "label": "Descubrir Maquillaje",
+        "href": "pages/tienda.html?category=maquillaje",
+        "icon": "fa-palette"
+      },
+      "secondaryBtn": {
+        "label": "Ver Activos INCI",
+        "href": "pages/ingredientes.html"
+      }
+    },
+    {
+      "id": "alta-perfumeria",
+      "tag": "Alta Perfumería de Autor",
+      "tagIcon": "fa-gem",
+      "title": "Fragancias Exclusivas que Envuelven los Sentidos",
+      "subtitle": "Acordes artesanales de jazmín real, rosa al rocío, sándalo blanco y ámbar dorado conservados en frascos de cristal tallado de colección.",
+      "image": "assets/images/carousel/slide_fragancias.png",
+      "imageAlt": "Frascos de perfume de cristal tallado con detalles dorados y flores blancas",
+      "primaryBtn": {
+        "label": "Ver Fragancias",
+        "href": "pages/tienda.html?category=fragancias",
+        "icon": "fa-spray-can-sparkles"
+      },
+      "secondaryBtn": {
+        "label": "Ir a Tienda Oficial",
+        "href": "pages/tienda.html"
+      }
+    }
+  ]
+}
+
